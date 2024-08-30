@@ -1,0 +1,78 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+/*   
+  
+  mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  } */
+
+  /* app.component.css */
+
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #3f51b5; /* Ensure background color is set */
+  }
+  
+  .content {
+    padding-top: 64px; /* Adjust this value based on the toolbar height */
+    /* padding: 0 20px; */
+  }
+
+@media (max-width: 600px) {
+  mat-toolbar {
+    flex-direction: column;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  a {
+    margin: 10px 0;
+  }
+}
+
+section {
+  margin: 50px 0;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 10px;
+  }
+}
+
+
+.example-menu-bar-item {
+  cursor: pointer;
+  border: none;
+
+  user-select: none;
+  min-width: 34px;
+  line-height: 26px;
+  padding: 0 16px;
+}
+
+.example-menu-bar-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+  

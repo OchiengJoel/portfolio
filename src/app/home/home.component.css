@@ -1,0 +1,25 @@
+/* .home {
+    text-align: center;
+    padding: 50px;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    /* color: white;
+  } */
+  
+  /* h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  } */
+  
+  .hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/src/assets/profile.jpg') no-repeat center center;
+    background-size: cover;
+    /* color: white; */
+  }

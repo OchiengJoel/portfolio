@@ -1,0 +1,63 @@
+/* .example-card{
+    max-width: 600px;
+    max-height: fit-content;
+    margin: 20px;
+} */
+
+/* .example-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  } */
+  
+  /* .example-header-image {
+    background: url('path/to/image') no-repeat center center;
+    background-size: cover;
+  } */
+
+
+  /* Ensure the mat-card takes up the full height of the grid tile */
+mat-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .example-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 8px; /* Rounded corners for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+  }
+  
+  .example-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .example-header-image {
+    /* background: url('path/to/image') no-repeat center center; */
+    background-size: cover;
+    height: 64px; /* Adjust header height */
+    width: 64px; /* Adjust header width */
+    border-radius: 50%; /* Make the header image circular */
+  }
+  
+  .example-card-image {
+    width: 100%; /* Make image fill the card */
+    height: 200px; /* Fixed height for image */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+  
+  .example-card-description {
+    font-size: 14px; /* Adjust font size for description */
+    color: #555; /* Slightly darkened text color for readability */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Responsive design for smaller screens */
+  
+  
+  
