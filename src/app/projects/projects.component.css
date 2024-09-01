@@ -1,63 +1,122 @@
-/* .example-card{
-    max-width: 600px;
-    max-height: fit-content;
-    margin: 20px;
-} */
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax for desired minimum width */
+  grid-auto-rows: minmax(200px, auto); /* Ensure rows adjust based on content */
+  gap: 16px; /* Space between grid items */
+  padding: 16px; /* Optional: Padding around the grid */
+}
 
-/* .example-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  } */
-  
-  /* .example-header-image {
-    background: url('path/to/image') no-repeat center center;
-    background-size: cover;
-  } */
+/* Ensure grid items take up full width and height of their container */
+.grid-item {
+  display: flex;
+  align-items: stretch; /* Ensure items stretch to the full height of the grid item */
+  justify-content: center;
+}
 
+/* Card styling */
+.example-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make card take full width of grid item */
+  height: 100%; /* Make card take full height of grid item */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
-  /* Ensure the mat-card takes up the full height of the grid tile */
-mat-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden; /* Prevent content overflow */
+.example-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.example-header-image {
+  background-size: cover;
+  height: 64px; /* Adjust header image height */
+  width: 64px;  /* Adjust header image width */
+  border-radius: 50%;
+}
+
+.example-card-image {
+  width: 100%;
+  height: 200px; /* Fixed height for card image */
+  object-fit: cover;
+}
+
+.example-card-description {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Ensure a maximum of 4 cards per row, adjusting as needed for responsive design */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
   }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for very small screens */
+  }
+}
+
+
+
+
+ /* Flex container */
+/* .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; Space between items
+  } */
   
-  .example-card {
+  /* Flex item */
+  /* .flex-item {
+    flex: 1 1 calc(33.333% - 16px);
+    box-sizing: border-box;
+  } */
+  
+  /* .example-card {
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-radius: 8px; /* Rounded corners for card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
   }
   
   .example-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
   .example-header-image {
-    /* background: url('path/to/image') no-repeat center center; */
+    
     background-size: cover;
-    height: 64px; /* Adjust header height */
-    width: 64px; /* Adjust header width */
-    border-radius: 50%; /* Make the header image circular */
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
   }
   
   .example-card-image {
-    width: 100%; /* Make image fill the card */
-    height: 200px; /* Fixed height for image */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
   }
   
   .example-card-description {
-    font-size: 14px; /* Adjust font size for description */
-    color: #555; /* Slightly darkened text color for readability */
-    margin: 0; /* Remove default margin */
-  }
-  
-  /* Responsive design for smaller screens */
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  } */
+
+
   
   
   

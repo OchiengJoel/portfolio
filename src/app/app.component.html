@@ -25,24 +25,19 @@
 
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>My Portfolio</span>
+    <span>Ochieng Joel</span>
     <span class="spacer"></span>
-    <a mat-button class="example-menu-bar-item" (click)="scrollToSection('home')">Home</a>
+    <!-- <a mat-button class="example-menu-bar-item" (click)="scrollToSection('home')">Home</a> -->
     <a mat-button class="example-menu-bar-item" (click)="scrollToSection('about')">About</a>
     <a mat-button class="example-menu-bar-item" (click)="scrollToSection('skills')">Skills</a>
     <a mat-button class="example-menu-bar-item" (click)="scrollToSection('projects')">Projects</a>
     <a mat-button class="example-menu-bar-item" (click)="scrollToSection('contact')">Contact</a>
 
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <div class="content">
-  <section id="home" #home>
-    <app-home></app-home>
-  </section>
+  
   <section id="about" #about>
     <app-about></app-about>
   </section>
@@ -55,6 +50,9 @@
   <section id="contact" #contact>
     <app-contact></app-contact>
   </section>
+  <!-- <section id="home" #home>
+    <app-home></app-home>
+  </section> -->
 </div>
 
 

@@ -14,12 +14,30 @@
     font-size: 1.5rem;
   } */
   
-  .hero-container {
+  /* .hero-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('/src/assets/profile.jpg') no-repeat center center;
     background-size: cover;
-    /* color: white; */
-  }
+    
+  } */
+
+  /* .container {
+    height: 100vh; 
+    align-items: center;
+    display: flex; 
+    justify-content: center;    
+    background: url('/src/assets/profile.jpg') no-repeat center center;
+    background-size: cover;
+    
+  } */
+
+  /* .container {
+    align-items: center;
+    justify-content: center;    
+    background: url('/src/assets/profile.jpg') no-repeat center center;
+    background-size: cover;
+    
+  } */

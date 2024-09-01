@@ -2,25 +2,6 @@
     flex: 1 1 auto;
   }
 
-/*   
-  
-  mat-toolbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  } */
-
-  /* app.component.css */
-
   mat-toolbar {
     position: fixed;
     top: 0;
@@ -31,7 +12,9 @@
   }
   
   .content {
-    padding-top: 64px; /* Adjust this value based on the toolbar height */
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 3%; /* Adjust this value based on the toolbar height */
     /* padding: 0 20px; */
   }
 
